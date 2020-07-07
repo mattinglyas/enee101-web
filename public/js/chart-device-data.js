@@ -87,15 +87,13 @@ $(document).ready(() => {
         id: 'distance',
         type: 'linear',
         scaleLabel: {
-          labelString: 'y_distance',
+          labelString: 'Distance (Inches)',
           display: true,
         },
         position: 'right',
         ticks: {
           beginAtZero: true,
-          max: 1000,
-          min: 0,
-          stepsize: 100
+          stepsize: 1
         }
       }]
     }

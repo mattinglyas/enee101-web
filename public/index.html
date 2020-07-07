@@ -21,7 +21,7 @@
             <span id="deviceCount">0 devices</span>
             <select id="listOfDevices" class="select_box"></select>
         </span>
-        <span>Temperature & Humidity Real-time Data</span>
+        <span>X and Y Real-time Data</span>
     </h1>
     <div>
         <canvas id="iotChart"></canvas>
@@ -29,9 +29,9 @@
     <h1 class="flexMethod">
         <div>
             <label for="xInput">X: </label>
-            <input type="number" id="xInput" name="xInput" min="0" max="1000">
+            <input type="number" id="xInput" name="xInput" min="-9999" max="9999">
             <label for="yInput">Y: </label>
-            <input type="number" id="yInput" name="yInput" min="0" max="1000">
+            <input type="number" id="yInput" name="yInput" min="-9999" max="9999">
             <button id="moveButton" type="button"></button>
             <script src="js/client.js" type="text/javascript" charset="utf-8"></script>
         </div>
