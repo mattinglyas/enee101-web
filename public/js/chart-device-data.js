@@ -115,6 +115,7 @@ $(document).ready(() => {
   const deviceCount = document.getElementById('deviceCount');
   const listOfDevices = document.getElementById('listOfDevices');
   const moveButton = document.getElementById('moveButton');
+  const resetButton = document.getElementById('resetButton');
 
   function OnSelectionChange() {
     const device = trackedDevices.findDevice(listOfDevices[listOfDevices.selectedIndex].text);
@@ -124,6 +125,7 @@ $(document).ready(() => {
     myLineChart.update();
 
     moveButton.innerHTML = 'Send to ' + listOfDevices[listOfDevices.selectedIndex].text;
+    resetButton.innerHTML = 'Reset ' + listOfDevices[listOfDevices.selectedIndex].text;
   }
   listOfDevices.addEventListener('change', OnSelectionChange, false);
 
